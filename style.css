@@ -1,0 +1,123 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+.cat {
+	margin: 0 auto;
+	width: 300px;
+	height: 400px;
+}
+
+.ears {
+	width: 300px;
+	height: 40px;
+}
+
+.left-ear, .right-ear {
+	height: 130px;
+    width: 130px;
+    float: left;
+}
+
+.left-ear{
+    float: left;
+}
+
+.right-ear {
+    float: right;
+}
+
+.left-ear-transform {
+    width: 50%;
+    height: 100%;    
+    padding-left: 40%;
+    padding-bottom: 0%;
+    overflow: hidden;
+}
+.left-ear-transform:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0%;
+    margin-left:-85px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 100px solid #4679BD;
+	transform: rotate(-40deg);
+}
+
+.right-ear-transform {
+    width: 50%;
+    height: 100%;    
+    padding-left: 40%;
+    padding-bottom: 0%;
+    overflow: hidden;
+}
+.right-ear-transform:after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 0%;
+    margin-left:-85px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 100px solid #4679BD;
+	transform: rotate(40deg);
+}
+
+.face {
+	background-color: pink;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+	position: relative;
+	border-radius: 50%;
+}
+
+.eyes {
+	width: 200px;
+	height: 75px;
+	position: absolute;
+	margin: 0 auto;
+	top: 50px;
+	left: 0;
+	right: 0;
+}
+
+.left-eye, .right-eye {
+	background-color: lightgreen;
+	float: left;
+	width: 75px;
+	height: 75px;
+}
+
+.left-eye {
+	float: left;
+}
+
+.right-eye {
+	float: right;
+}
+
+.nose {
+	position: absolute;
+	background-color: blue;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	bottom: 100px;
+	left: 0;
+	right: 0;
+}
+
+.mouth {
+	position: absolute;
+	background-color: black;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+}
